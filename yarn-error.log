@@ -1,0 +1,77 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js init
+
+PATH: 
+  C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\gnu\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\dotnet\;C:\Users\rodox\AppData\Local\Programs\Python\Python39\;C:\Users\rodox\AppData\Local\Microsoft\WindowsApps;C:\Users\rodox\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rodox\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\rodox\AppData\Roaming\npm;C:\Users\rodox\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:137145:13)
+      at Interface.emit (events.js:400:28)
+      at Interface._ttyWrite (readline.js:1001:16)
+      at ReadStream.onkeypress (readline.js:265:10)
+      at ReadStream.emit (events.js:400:28)
+      at emitKeys (internal/readline/utils.js:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1270:36)
+      at ReadStream.emit (events.js:400:28)
+      at addChunk (internal/streams/readable.js:293:12)
+
+npm manifest: 
+  {
+    "name": "mas-backend",
+    "version": "1.0.0",
+    "main": "server.js",
+    "repository": "https://github.com/thiagoromendes/senai-backend.git",
+    "author": "Thiago Mendes  <thiagoromendes@gmail.com>",
+    "license": "MIT",
+    "engines": {
+      "node": "12"
+    },
+    "scripts": {
+      "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+      "postinstall": "tsc",
+      "start": "node dist/server.js",
+      "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
+      "typeorm-production": "ts-node --transpile-only ./node_modules/typeorm/cli.js"
+    },
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "jest": "^26.6.3",
+      "jsonwebtoken": "^8.5.1",
+      "pg": "^8.5.1",
+      "ts-node": "^10.4.0",
+      "tsc": "^2.0.3",
+      "typeorm": "^0.2.32",
+      "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+      "@types/bcryptjs": "^2.4.2",
+      "@types/cors": "^2.8.10",
+      "@types/debug": "^4.1.5",
+      "@types/express": "^4.17.11",
+      "@types/jsonwebtoken": "^8.5.1",
+      "@types/uuid": "^8.3.0",
+      "debug": "^4.3.1",
+      "dotenv": "^8.2.0",
+      "ts-node-dev": "^1.1.6",
+      "typescript": "^4.2.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
