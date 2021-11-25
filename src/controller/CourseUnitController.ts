@@ -23,7 +23,7 @@ class CourseUnitController  {
         const getCoursesUnits = new GetCourseUnitsService();
 
         const coursesUnits = await getCoursesUnits.execute(userId);
-        //console.log(coursesUnits);
+        console.log(coursesUnits);
         return response.json(coursesUnits);
         
     }

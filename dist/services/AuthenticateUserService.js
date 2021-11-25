@@ -51,12 +51,12 @@ var AuthenticateUserService = /** @class */ (function () {
     AuthenticateUserService.prototype.execute = function (_a) {
         var email = _a.email, password = _a.password;
         return __awaiter(this, void 0, void 0, function () {
-            var usersRepository, user, comparePassword, _b, secret, expiresIn, token, id, name, emailUser;
+            var userRepository, user, comparePassword, _b, secret, expiresIn, token, id, name, emailUser;
             return __generator(this, function (_c) {
                 switch (_c.label) {
                     case 0:
-                        usersRepository = (0, typeorm_1.getRepository)(User_1.User);
-                        return [4 /*yield*/, usersRepository.findOne({ email: email })];
+                        userRepository = (0, typeorm_1.getRepository)(User_1.User);
+                        return [4 /*yield*/, userRepository.findOne({ email: email })];
                     case 1:
                         user = _c.sent();
                         if (!user) {

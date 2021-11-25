@@ -1,4 +1,4 @@
-import {MigrationInterface, QueryRunner, Table} from "typeorm";
+import {MigrationInterface, QueryRunner, Table} from 'typeorm';
 
 export class CreateActivys1637369258526 implements MigrationInterface {
 

@@ -18,7 +18,7 @@ class GetCourseUnitsService{
                 message:'courses unit not found'
             }
         }
-
+        return courseUnits;
     }
 
 }

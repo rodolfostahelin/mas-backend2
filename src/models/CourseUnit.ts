@@ -25,7 +25,7 @@ class CourseUnit {
     description: string;
 
     @CreateDateColumn()
-    create_at: Date;
+    created_at: Date;
 
     @OneToMany(() => Activy, activy => activy.course_unit)
     activies: Activy[]

@@ -1,9 +1,9 @@
 {
-  "name": "mas-backend",
+  "name": "mas-backend2",
   "version": "1.0.0",
   "description": "api for web aplication",
   "main": "server.ts",
-  "repository": "https://github.com/rodolostahelin/mas-backend.git",
+  "repository": "https://github.com/rodolostahelin/mas-backend2.git",
   "author": "Rodolfo Schmitt Stahelin",
   "license": "MIT",
   "scripts": {

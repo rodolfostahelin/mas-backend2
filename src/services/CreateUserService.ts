@@ -1,4 +1,4 @@
-import { hash } from "bcryptjs";
+import { hash } from 'bcryptjs';
 import { getRepository } from "typeorm";
 import { User } from "../models/User";
 
@@ -11,8 +11,7 @@ interface IUserData {
 
 class CreateUserService {
 
-    public async execute({ name, email, password }: IUserData) {
-        try {
+    public async execute({ name, email, password }: IUserData): Promise<User | { error: string; }> {
             const userRepository = getRepository(User)
             const checkUserExists = await userRepository.findOne({ email });
             if (checkUserExists) {
@@ -28,12 +27,10 @@ class CreateUserService {
             await userRepository.save(user);
 
             return user;
-        } catch (error) {
-            console.log(error)
-            return null;
+
         }
 
     }
-}
+
 
 export { CreateUserService }

@@ -13,9 +13,9 @@ class AuthenticateUserService{
 
     public async execute({email,password}: AuthData): Promise<string | {}> {
 
-        const usersRepository = getRepository(User);
+        const userRepository = getRepository(User);
 
-        const user = await usersRepository.findOne({email});
+        const user = await userRepository.findOne({email});
 
         if(!user) {
             return {

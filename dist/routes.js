@@ -21,7 +21,4 @@ routes.get('/courseUnit', authenticated_1.default, userController.show);
 routes.post('/user', userController.create);
 routes.post('/activy', authenticated_1.default, activyController.create);
 routes.post('/courseUnit', authenticated_1.default, courseunitcontroller.create);
-routes.get('/user', function (request, response) { return response.json({
-    message: "hello world"
-}); });
 exports.default = routes;
