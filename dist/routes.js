@@ -16,8 +16,8 @@ var authenticatecontroller = new AuthenticateController_1.AuthenticateController
 var routes = (0, express_1.Router)();
 routes.post('/auth', authenticatecontroller.create);
 routes.get('/user', authenticated_1.default, userController.show);
-routes.get('/activy', authenticated_1.default, userController.show);
-routes.get('/courseUnit', authenticated_1.default, userController.show);
+routes.get('/activy', authenticated_1.default, activyController.show);
+routes.get('/courseUnit', authenticated_1.default, courseunitcontroller.show);
 routes.post('/user', userController.create);
 routes.post('/activy', authenticated_1.default, activyController.create);
 routes.post('/courseUnit', authenticated_1.default, courseunitcontroller.create);

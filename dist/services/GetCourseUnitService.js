@@ -54,7 +54,7 @@ var GetCourseUnitsService = /** @class */ (function () {
                             message: 'courses unit not found'
                         }];
                 }
-                return [2 /*return*/];
+                return [2 /*return*/, courseUnits];
             });
         });
     };

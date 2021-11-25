@@ -46,11 +46,10 @@ var CreateUserService = /** @class */ (function () {
     CreateUserService.prototype.execute = function (_a) {
         var name = _a.name, email = _a.email, password = _a.password;
         return __awaiter(this, void 0, void 0, function () {
-            var userRepository, checkUserExists, hashedPassword, user, error_1;
+            var userRepository, checkUserExists, hashedPassword, user;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
-                        _b.trys.push([0, 4, , 5]);
                         userRepository = (0, typeorm_1.getRepository)(User_1.User);
                         return [4 /*yield*/, userRepository.findOne({ email: email })];
                     case 1:
@@ -70,11 +69,6 @@ var CreateUserService = /** @class */ (function () {
                     case 3:
                         _b.sent();
                         return [2 /*return*/, user];
-                    case 4:
-                        error_1 = _b.sent();
-                        console.log(error_1);
-                        return [2 /*return*/, null];
-                    case 5: return [2 /*return*/];
                 }
             });
         });
